@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeHole</title>
+    <link rel="stylesheet" href="css/bootstrap552.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+</head>
+<body>
+
+
+    <section>
+        <div class="navbar navbar-expand-md bg-light mb-2">
+            <div class="container-fluid col-sm-1"></div>
+            <div class="container-fluid col-sm-6">
+                <div class="d-flex flex-row">
+                    <a class="navbar-brand" href="index.html">TreeHole</a>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for dicuz" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="container-fluid col-sm-3 justify-content-start">
+                <div class="col-sm-1">
+                    <a href="Message.html">
+                        <img src="image/SVG/mails.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-1">
+                    <a href="CommentsAboutMe.html">
+                        <img src="image/SVG/message.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-1">
+                    <a href="MyInfomation.html">
+                        <img src="image/SVG/login.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-sm-1">
+                    <a href="AddFriends.html">
+                        <img src="image/SVG/register.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+            </div>
+    
+        </div>
+    </section>
+    <section>
+        <div id="main-body">
+            <div id="main-content-3">
+                <div id="search-friend">
+                    <input type="search" placeholder="Search for friends ">
+                    <button>GO</button>
+                </div>
+                <div id="probably-interested">
+                    <div>
+                        <table>
+                            <tr>
+                                <td id="probably-interested-title">可能认识的人</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="friends">
+                        <table id="friends-table">
+                            <tr id="friends-table-tr">
+                                <td id="friends-headpicture">
+                                    <div>
+                                        <img src="image/headpicture/headpicture2.webp">
+                                    </div>                                
+                                </td>
+                                <td id="friends-information">
+                                    <table id="friends-info-table">
+                                        <tr id="friends-info-table tr">
+                                            <td id="info-title">昵称</td>
+                                            <td id="info-content">北方湖</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="info-title">个性签名</td>
+                                            <td id="info-content">遥远的北方有一片湖。</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td id="add-friends-button">
+                                    <button onclick="test0();">添加好友</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="friends">
+                        <table id="friends-table">
+                            <tr id="friends-table-tr">
+                                <td id="friends-headpicture">
+                                    <div>
+                                        <img src="image/headpicture/headpicture3.webp">
+                                    </div>
+                                </td>
+                                <td id="friends-information">
+                                    <table id="friends-info-table">
+                                        <tr id="friends-info-table tr">
+                                            <td id="info-title">昵称</td>
+                                            <td id="info-content">南方海</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="info-title">个性签名</td>
+                                            <td id="info-content">遥远的南方有一片海。</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td id="add-friends-button">
+                                    <button onclick="test0();">添加好友</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="friends">
+                        <table id="friends-table">
+                            <tr id="friends-table-tr">
+                                <td id="friends-headpicture">
+                                    <div>
+                                        <img src="image/headpicture/headpicture4.webp">
+                                    </div>
+                                </td>
+                                <td id="friends-information">
+                                    <table id="friends-info-table">
+                                        <tr id="friends-info-table tr">
+                                            <td id="info-title">昵称</td>
+                                            <td id="info-content">东方龙</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="info-title">个性签名</td>
+                                            <td id="info-content">遥远的东方有一条龙。</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td id="add-friends-button">
+                                    <button onclick="test0();">添加好友</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="friends">
+                        <table id="friends-table">
+                            <tr id="friends-table-tr">
+                                <td id="friends-headpicture">
+                                    <div>
+                                        <img src="image/headpicture/headpicture5.webp">
+                                    </div>
+                                </td>
+                                <td id="friends-information">
+                                    <table id="friends-info-table">
+                                        <tr id="friends-info-table tr">
+                                            <td id="info-title">昵称</td>
+                                            <td id="info-content">西方沙</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="info-title">个性签名</td>
+                                            <td id="info-content">遥远的西方有一片沙。</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td id="add-friends-button">
+                                    <button onclick="test0();">添加好友</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="friends">
+                        <table id="friends-table">
+                            <tr id="friends-table-tr">
+                                <td id="friends-headpicture">
+                                    <div>
+                                        <img src="image/headpicture/headpicture6.webp">
+                                    </div>
+                                </td>
+                                <td id="friends-information">
+                                    <table id="friends-info-table">
+                                        <tr id="friends-info-table tr">
+                                            <td id="info-title">昵称</td>
+                                            <td id="info-content">龙卷风</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="info-title">个性签名</td>
+                                            <td id="info-content">遥远的地方有龙卷风。</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td id="add-friends-button">
+                                    <button onclick="test0();">添加好友</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    
+</body>
+</html>
+<script type="text/javascript">
+	function displayAlert( data, time){
+
+    var lunbo=document.createElement("div");
+    
+
+      lunbo.id="lunbo";
+      lunbo.style.position = "absolute";
+      lunbo.style.width = "200px";
+      lunbo.style.height = "60px";
+      lunbo.style.left = "50%";
+      lunbo.style.top = "15%";
+      lunbo.style.color = "white";
+      lunbo.style.fontSize = "25px";
+      lunbo.style.borderRadius = "20px";
+      lunbo.style.textAlign="center";
+      lunbo.style.lineHeight="60px";
+      lunbo.style.backgroundColor = "black";
+
+      if(document.getElementById("lunbo")==null){
+          document.body.appendChild(lunbo);
+          lunbo.innerHTML=data;
+          setTimeout(function(){
+              document.body.removeChild(lunbo);
+          } ,time);
+      }
+    }
+    function test0() {
+        displayAlert("添加成功",1500);
+    }
+  
+</script>

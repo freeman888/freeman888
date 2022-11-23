@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeHole</title>
+    <link rel="stylesheet" href="css/bootstrap552.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+</head>
+<body>
+
+
+    <section>
+        <div class="navbar navbar-expand-md bg-light mb-2 fixed-top">
+            <div class="container-fluid col-sm-1"></div>
+            <div class="container-fluid col-sm-6">
+                <div class="d-flex flex-row">
+                    <a class="navbar-brand" href="index.html">TreeHole</a>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for dicuz" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="container-fluid col-sm-3 justify-content-start">
+                <div class="col-sm-1">
+                    <a href="Message.html">
+                        <img src="image/SVG/mails.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-1">
+                    <a href="CommentsAboutMe.html">
+                        <img src="image/SVG/message.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-1">
+                    <a href="MyInfomation.html">
+                        <img src="image/SVG/login.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-sm-1">
+                    <a href="AddFriends.html">
+                        <img src="image/SVG/register.svg" class="img-fluid" alt="">
+                    </a>
+                </div>
+
+            </div>
+    
+        </div>
+    </section>
+    <br><br><br>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="col-sm-8 mt-2 row">
+                        <div class="col-sm-9">
+                            <div class="card pt-2 mb-2">
+                                <div class="card-body">
+                                    <div class="p-2 d-flex flex-row justify-content-between">
+                                        <div class="d-flex flex-row">
+                                            <figure class="figure w56">
+                                                <a href="">
+                                                    <img class="img-fluid rounded circled" src="image/Avatar/aether.jpg" alt="">
+                                                </a>
+                                            </figure>
+                                            <div class="d-flex flex-column m-2">
+                                                <span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">id</span>
+                                                <span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">my self introduction</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="">
+                                            <button class="btn btn-sm btn-outline-secondary" onclick="followSuccess()">follow</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-column justify-content-center p-3">
+                                        
+                                        <p>
+                                            北京时间11月22日，世界杯小组赛C组第1轮，阿根廷迎战沙特。
+                                            上半场帕雷德斯在对方禁区被放倒，梅西点射命中，阿根廷1-0沙特阿拉伯
+                                            ；下半场萨利赫-谢赫里为沙特阿拉伯扳平比分，萨利姆-多萨里世界波建功
+                                            ，阿根廷队遭遇逆转不敌沙特
+                                        </p>
+                                        
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row p-3 pt-1">
+                                    <div class=" d-flex flex-row justify-content-start mt-2">
+                                        <div class="col-sm-2 ">
+                                            <button class="btn btn-outline-secondary btn-sm",id="goodSpan", onclick="sendGood()">
+                                                <img class="img-fluid" src="image/SVG/liked.svg" alt="">
+                                                <span id="good">233</span>
+                                            </button>
+                                            
+                                        </div>
+                                        <div class="col-sm-10 row ">
+                                            <div class="col-sm-3 justify-content-end">
+                                                <img class="img-fluid" src="image/SVG/share.svg" alt="">
+                                                <span class="btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse14">分享</span>
+                                            </div>
+
+                                            <div class="col-sm-3 justify-content-end">
+                                                <img class="img-fluid" src="image/SVG/favorite.svg" alt="">
+                                                <span class="btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">收藏</span>
+                                            </div>
+                                        </div>
+                                    
+                            
+        
+                                        
+
+                                        
+
+                                    </div>
+                                </div>
+                                <div class="collapse row" id="collapse13">
+                                    <div class="card-body">
+                                           <div class="Login-socialLogin"><span class="Login-socialButtonGroup"><button type="button" class="Button Login-socialButton Button--plain"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="ZDI ZDI--Wechat24"><path fill="#07C160" d="M20.314 18.59c1.333-.968 2.186-2.397 2.186-3.986 0-2.91-2.833-5.27-6.325-5.27-3.494 0-6.325 2.36-6.325 5.27 0 2.911 2.831 5.271 6.325 5.271.698.001 1.393-.096 2.064-.288l.186-.029c.122 0 .232.038.336.097l1.386.8.12.04a.21.21 0 0 0 .212-.211l-.034-.154-.285-1.063-.023-.135a.42.42 0 0 1 .177-.343ZM9.09 3.513C4.9 3.514 1.5 6.346 1.5 9.84c0 1.905 1.022 3.622 2.622 4.781a.505.505 0 0 1 .213.412l-.026.16-.343 1.276-.04.185c0 .14.113.254.252.254l.146-.047 1.663-.96a.793.793 0 0 1 .403-.116l.222.032c.806.231 1.64.348 2.478.348l.417-.01a4.888 4.888 0 0 1-.255-1.55c0-3.186 3.1-5.77 6.923-5.77l.411.011c-.57-3.02-3.71-5.332-7.494-5.332Zm4.976 10.248a.843.843 0 1 1 0-1.685.843.843 0 0 1 0 1.684v.001Zm4.217 0a.843.843 0 1 1 0-1.685.843.843 0 0 1 0 1.684v.001ZM6.561 8.827a1.012 1.012 0 1 1 0-2.023 1.012 1.012 0 0 1 0 2.023Zm5.061 0a1.012 1.012 0 1 1 0-2.023 1.012 1.012 0 0 1 0 2.023Z" clip-rule="evenodd"></path></svg></button><button type="button" class="Button Login-socialButton Button--plain"><svg width="24" height="24" viewBox="0 0 24 24" fill="#50C8FD" class="ZDI ZDI--Qq24"><path fill-rule="evenodd" d="M12.003 2c-2.265 0-6.29 1.364-6.29 7.325v1.195S3.55 14.96 3.55 17.474c0 .665.17 1.025.281 1.025.114 0 .902-.483 1.748-2.072 0 0-.18 2.197 1.904 3.967 0 0-1.77.495-1.77 1.182 0 .686 4.078.43 6.29 0 2.239.425 6.288.687 6.288 0 0-.688-1.77-1.182-1.77-1.182 2.086-1.77 1.906-3.967 1.906-3.967.845 1.588 1.634 2.072 1.746 2.072.111 0 .283-.36.283-1.025 0-2.514-2.165-6.954-2.165-6.954V9.325C18.29 3.364 14.268 2 12.003 2Z" clip-rule="evenodd"></path></svg></button><button type="button" class="Button Login-socialButton Button--plain"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" class="ZDI ZDI--Weibo24"><path fill="#FB6622" d="M15.518 3.06c8.834-.854 7.395 7.732 7.394 7.731-.625 1.44-1.673.31-1.673.31.596-7.52-5.692-6.33-5.692-6.33-.898-1.067-.03-1.71-.03-1.71Zm4.13 6.985c-.66 1.01-1.376.126-1.375.126.205-3.179-2.396-2.598-2.396-2.598-.72-.765-.091-1.346-.091-1.346 4.882-.55 3.863 3.818 3.863 3.818ZM5.318 7.52s4.615-3.86 6.443-1.328c0 0 .662 1.08-.111 2.797.003-.003 3.723-1.96 5.408.16 0 0 .848 1.094-.191 2.648 0 0 2.918-.099 2.918 2.715 0 2.811-4.104 6.44-9.315 6.44-5.214 0-8.026-2.092-8.596-3.102 0 0-3.475-4.495 3.444-10.33Zm10.448 7.792s.232-4.41-5.71-4.207c-6.652.231-6.58 4.654-6.58 4.654.022.39.098 3.713 5.843 3.713 5.98 0 6.447-4.16 6.447-4.16Zm-9.882.86s-.06-3.632 3.804-3.56c3.412.06 3.206 3.164 3.206 3.164s-.026 2.98-3.684 2.98c-3.288 0-3.326-2.584-3.326-2.584Zm2.528 1.037c.672 0 1.212-.447 1.212-.998 0-.55-.543-.998-1.212-.998-.672 0-1.215.447-1.215.998 0 .551.546.998 1.215.998Z" clip-rule="evenodd"></path></svg></button></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse "style="margin-left:20px" id="collapse12">
+                                    
+                                    
+                                        
+                                        
+                                        <input type="button" class="btn btn-outline-secondary" onclick="myFunction()" value="添加至收藏夹1">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="myFunction()" value="添加至收藏夹2">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="myFunction()" value="添加至收藏夹3">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="myFunction()" value="添加至收藏夹4">
+                                       
+                                </div>
+                                    <!-- reply -->
+
+                                <div class="card-body">
+                                    <div class="card">
+                                        <form class="d-flex p-2" role="region">
+                                            <input class="form-control me-2" type="region" placeholder="write reply" aria-label="reply">
+                                            <button class="btn btn-outline-success" type="submit">Reply</button>
+                                          </form>
+                                        <div class="card-body", style="background-color: lightgray;">
+                                            <div class="card mb-2">
+                                                <div class="card-body">
+                                                    <div>
+                                                        <div class="d-flex flex-row">
+                                                            <figure class="figure w32">
+                                                                <a href="">
+                                                                    <img class="img-fluid rounded circled" src="image/Avatar/klee.jpg" alt="">
+                                                                </a>
+                                                            </figure>
+                                                            <div class="d-flex flex-column m-2">
+                                                                <span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">id</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <p>足球真不是把每个位置能力最强的球员放上来，球队就最强的游戏
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mb-2">
+                                                <div class="card-body">
+                                                    <div>
+                                                        <div class="d-flex flex-row">
+                                                            <figure class="figure w32">
+                                                                <a href="">
+                                                                    <img class="img-fluid rounded circled" src="image/Avatar/keqing.jpg" alt="">
+                                                                </a>
+                                                            </figure>
+                                                            <div class="d-flex flex-column m-2">
+                                                                <span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">id</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <p>
+                                                            希望赶紧恢复状态吧，这毕竟才是第一场，还有时间和机会
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div class="modal fade modal-lg " id="myModal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                           
+                                <!-- 模态框头部 -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">发布新帖子</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                           
+                                <!-- 模态框内容 -->
+                                <div class="modal-body">
+                                    <div class="card-body">
+                                        <div class="card">
+                                            <form class="d-flex p-2" role="region">
+                                                <input class="form-control me-2" type="region" placeholder="标题" aria-label="reply">
+        
+                                              </form>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card">
+                                            <label for="comment" style="margin-left: 15px;">请输入内容：</label>
+                                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                        </div>
+                                    </div>
+                                    <p style="margin-left:15px; height: 15px;">标签:</p>
+                                    <div class="row ">
+                                        <div class="col-2">
+                                            <div style="margin-left: 15px;">
+                                             <div class="form-check">
+                                                 <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">
+                                                 <label class="form-check-label" for="check1">生活</label>
+                                                 
+                                             </div>
+                                             <div class="form-check">
+                                                 
+                                                 <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                                                 <label class="form-check-label" for="check2">校园</label>
+                                               
+                                             </div>
+                                             <div class="form-check">
+                                                 
+                                                 <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something">
+                                                 <label class="form-check-label" for="check3">提问</label>
+                                             </div>
+                                            </div>
+                                         </div>   
+                                         <div class="col-2">
+                                             <div style="margin-left: 15px;">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check4" name="option4" value="something">
+                                                  <label class="form-check-label" for="check4">体育</label>
+                                                  
+                                              </div>
+                                              <div class="form-check">
+                                                  
+                                                  <input type="checkbox" class="form-check-input" id="check5" name="option5" value="something">
+                                                  <label class="form-check-label" for="check5">游戏</label>
+                                                
+                                              </div>
+                                              <div class="form-check">
+                                                  
+                                                  <input type="checkbox" class="form-check-input" id="check6" name="option6" value="something">
+                                                  <label class="form-check-label" for="check6">情感</label>
+                                              </div>
+                                             </div>
+                                          </div>   
+                                          <div class="col-2">
+                                             <div style="margin-left: 15px;">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check7" name="option7" value="something">
+                                                  <label class="form-check-label" for="check7">搞笑</label>
+                                                  
+                                              </div>
+                                              <div class="form-check">
+                                                  
+                                                  <input type="checkbox" class="form-check-input" id="check8" name="option8" value="something">
+                                                  <label class="form-check-label" for="check8">影视</label>
+                                                
+                                              </div>
+                                              <div class="form-check">
+                                                  
+                                                  <input type="checkbox" class="form-check-input" id="check9" name="option9" value="something">
+                                                  <label class="form-check-label" for="check9">资讯</label>
+                                              </div>
+                                             </div>
+                                          </div>   
+                                          <div class="col-2">
+                                             <div style="margin-left: 15px;">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check10" name="option10" value="something">
+                                                  <label class="form-check-label" for="check10">资源</label>
+                                                  
+                                              </div>
+                                              <div class="form-check">
+                                                  
+                                                  <input type="checkbox" class="form-check-input" id="check11" name="option11" value="something">
+                                                  <label class="form-check-label" for="check11">公告</label>
+                                                
+                                              </div>
+                                              <div class="form-check">
+                                                  
+                                                  <input type="checkbox" class="form-check-input" id="check12" name="option12" value="something">
+                                                  <label class="form-check-label" for="check12">水贴</label>
+                                              </div>
+                                             </div>
+                                          </div> 
+                                    </div> 
+                                
+                                    
+                                </div>
+                           
+                                <!-- 模态框底部 -->
+                                <div class="modal-footer">
+                                    <button class="btn btn-outline-success" data-bs-dismiss="modal">提交</button>
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                                </div>
+                           
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card pt-2 pb-2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                <img src="image/SVG/write.svg" alt="">
+                                                <span>发布</span>
+                                            </button>
+                                        </div>
+    
+                                        <div class="col-sm-6 d-flex flex-row justify-content-end">
+                                            <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                <img src="image/SVG/draft.svg" alt="">
+                                                <span>草稿</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <img src="image/SVG/favorite.svg" alt="">
+                                        
+                                            <span class="btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">我的收藏</span>
+                                            <div class="collapse" id="collapse5">
+                                                
+                                                     <div class="row">   <a href="Favourite.html" class="shoucangjia">收藏夹1</a></div>
+                                                     <div class="row">   <a href="Favourite.html" class="shoucangjia">收藏夹2</a></div>
+                                                     <div class="row">   <a href="Favourite.html" class="shoucangjia">收藏夹3</a></div>
+                                                     <div class="row">   <a href="Favourite.html" class="shoucangjia">收藏夹4</a></div>
+                                               
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <img src="image/SVG/focus.svg" alt="">
+                                            <span class="btn btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">我的关注</span>
+                                            <div class="collapse" id="collapse6">
+                                                
+                                                        <div class="row">
+                                                            <div class="col-3"><img src="image/Avatar/klee.jpg" class="guanzhu"></div>
+                                                            <div class="col-9"><a class="guanzhu" href="MyInfomation.html">keli</a></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-3"><img src="image/Avatar/barbara.jpg" class="guanzhu"></div>
+                                                            <div class="col-9"><a class="guanzhu">barbara</a></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-3"><img src="image/Avatar/keqing.jpg" class="guanzhu"></div>
+                                                            <div class="col-9"><a class="guanzhu">keqing</a></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-3"><img src="image/Avatar/lumine.jpg" class="guanzhu"></div>
+                                                            <div class="col-9"><a class="guanzhu">lumine</a></div>
+                                                        </div>
+                                                 
+                                                
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    
+
+                </div>
+                
+            </div>
+        </div>
+        <a class="btn btn-outline-primary" href="#" role="button" style="position:fixed;right:30px;bottom:30px">
+            回到顶部
+            </a>   
+
+    </section>
+    <footer class="panel-footer" style="width: 100%; overflow: hidden;">
+        <div class="container">
+      <div class="row footer-top" style="text-align: center;">
+       
+      </div>
+      <hr style="border: 1px  solid #000000;">
+      <div class="row" style="text-align: center;">
+       <div class="col-sm-3 col-md-3 col-lg-3">
+       <a href="#" class="footer">关于我们</a>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+       <a href="#" class=" footer">联系方式</a></li>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+       <a href="#" class="footer">旗下网站</a></li>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+       <a href="#" class="footer">特别致谢</a></li>
+        </div>
+      </div><br>
+      <h5 style="text-align: center;">©2022走进软件-3小组</h5>
+        </div>
+      </footer>
+    
+</body>
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
